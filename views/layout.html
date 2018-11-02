@@ -4,19 +4,29 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>{{title}}</title>
 </head>
 
 <body>
     <header>
-        This is the header.
+        Welcome to our website party monsters. Choose a party/event you would like to attend!.
+    <div class="table">
+        <ul id="horiz_list">
+            <li>Home</li>
+            <li>About</li>
+            <li>New Event</li>
+        </ul>
+    </div>
     </header>
+    
+    
     <div>
         {% block body %}
         {% endblock %}
     </div>
     <footer>
-        This is the footer.
+        Click here to RSVP.
     </footer>
 
     {% block late_loading_js %}
