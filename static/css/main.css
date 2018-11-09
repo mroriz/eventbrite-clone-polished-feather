@@ -20,3 +20,8 @@ div.cat-holder img {
 img#chosen-cat {
     display: block;
 }
+.header img {
+  float: left;
+  width: 5%;
+  height: 100%;
+}
