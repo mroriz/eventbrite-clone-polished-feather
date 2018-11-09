@@ -25,7 +25,7 @@ nunjucks.configure('views', {
 app.set('view engine', 'html');
 
 // Configure our app to serve "static" assets,
-// like client-side images, js, and css out of
+// new_eventlike client-side images, js, and css out of
 // a directory called "static".
 app.use('/static', express.static('static'));
 
@@ -35,3 +35,5 @@ app.get('/about', indexControllers.about);
 app.get('/new_event', indexControllers.new_event);
 
 module.exports = app;
+
+
