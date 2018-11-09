@@ -1,22 +1,20 @@
 {% extends "layout.html" %}
 
+
 {% block body %}
+
 <p>
-    {{salutation}}
-</p>
-<p>
-    This is the description of the party.
+    NEW EVENT.
 </p>
 
-<div class="cat-holder">
-    <input type="button" value="Next event" id="next-cat">
-    <img src="/static/img/cat0.jpg" alt="Cat zero">
-    <img src="/static/img/cat1.jpg" alt="Cat one">
-    <img src="/static/img/cat2.jpg" alt="Cat two">
-    <img src="/static/img/cat3.jpg" alt="Cat three">
-</div>
+<p>
+    Create an event by filling the following form. Hit submit after you are done .
+</p>
+
+
 {% endblock %}
 
 {% block late_loading_js %}
 <script src="/static/js/catgifs.js"></script>
 {% endblock %}
+

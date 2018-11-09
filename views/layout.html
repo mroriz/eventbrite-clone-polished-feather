@@ -10,14 +10,7 @@
 
 <body>
     <header>
-        Welcome to our website party monsters. Choose a party/event you would like to attend!.
-    <div class="table">
-        <ul id="horiz_list">
-            <li>Home</li>
-            <li>About Team</li>
-            <li>New Event</li>
-        </ul>
-    </div>
+        Party Monsters - The Best Events in New Haven!
     </header>
     
     
@@ -26,7 +19,13 @@
         {% endblock %}
     </div>
     <footer>
-        Click here to RSVP.
+        <div class="table">
+            <ul id="horiz_list">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Team</a></li>
+                <li><a href="/new_event">New Event</a></li>
+            </ul>
+        </div>
     </footer>
 
     {% block late_loading_js %}
