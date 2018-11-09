@@ -10,10 +10,11 @@ function index(request, response) {
    
 }
 
+
 function about(request, response) {
     const contextData = {
-        title: 'Party Monsters',
-        salutation: 'Welcome to Party Monsters. Invite or RSVP to events!',
+        title: 'About our Team',
+        salutation: 'Take a look at our headshots',
 
     };
     response.render('about', contextData);
