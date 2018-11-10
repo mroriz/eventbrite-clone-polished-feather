@@ -27,7 +27,7 @@ function about(request, response) {
 function new_event(request, response) {
     const contextData = {
         title: 'Party Monsters',
-        salutation: 'Welcome to Party Monsters. Invite or RSVP to events!',
+        salutation: 'New Event!',
 
     };
     response.render('new_event', contextData);
