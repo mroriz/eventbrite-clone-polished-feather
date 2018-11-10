@@ -4,17 +4,12 @@
 {% block body %}
 
 <p>
-    NEW EVENT.
-   
-</p>
-
-<p>
-    Create an event by filling the following form. Hit submit after you are done .
+    These are the events happening soon! RSVP if you wish to attend. If you have an event in mind, create a new one!
 </p>
 
 <ul>
   {% for event in events %}
-  <li>{{ event.title }}: {{ event.location }}</li>
+  <li>{{ event.title }}: {{ event.location }}, {{ event.date}}</li>
   {% endfor %}
 </ul>
 
