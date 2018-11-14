@@ -1,12 +1,14 @@
 'use strict';
-
+const bodyParser = require('body-parser');
 const express = require('express');
+
 
 // Configure our "templating engine", which is
 // Mozilla's "Nunjucks" in this case.
 const nunjucks = require('nunjucks');
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Import our controllers from their files. Notice how we're
 // giving the `require` built-in function the path a file
@@ -24,6 +26,8 @@ nunjucks.configure('views', {
 });
 app.set('view engine', 'html');
 
+
+
 // Configure our app to serve "static" assets,
 // new_eventlike client-side images, js, and css out of
 // a directory called "static".
@@ -34,6 +38,7 @@ app.get('/', indexControllers.index);
 app.get('/about', indexControllers.about);
 app.get('/new_event', indexControllers.new_event);
 app.get('/form', indexControllers.form);
+app.post('/form', indexControllers.formSubmit);
 //app.post('/dbase', indexControllers.new_event) {
 //     var title = req.body.title_event;
 //     var date = req.body.date_event;
