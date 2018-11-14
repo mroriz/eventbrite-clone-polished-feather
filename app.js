@@ -33,6 +33,14 @@ app.use('/static', express.static('static'));
 app.get('/', indexControllers.index);
 app.get('/about', indexControllers.about);
 app.get('/new_event', indexControllers.new_event);
+app.get('/form', indexControllers.form);
+//app.post('/dbase', indexControllers.new_event) {
+//     var title = req.body.title_event;
+//     var date = req.body.date_event;
+//     var image = req.body.pic;
+//     var location = req.body.location;
+//     res.send(title, date);
+// });
 
 module.exports = app;
 

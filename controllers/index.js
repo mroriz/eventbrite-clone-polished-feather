@@ -7,7 +7,7 @@ const eventModels=require('../models/events.js');
 function index(request, response) {
     const contextData = {
         title: 'Party Monsters',
-        salutation: 'Welcome to Party Monsters. Invite or RSVP to events!',
+        salutation: 'CHANGE THIS',
         events: eventModels.all,
     };
     response.render('index', contextData);
@@ -26,11 +26,21 @@ function about(request, response) {
 
 function new_event(request, response) {
     const contextData = {
-        title: 'Party Monsters',
-        salutation: 'New Event!',
+        title: 'CHANGE IT',
+        salutation: 'CHANGE THIS TOO',
 
     };
     response.render('new_event', contextData);
+   
+}
+
+function form(request, response) {
+    const contextData = {
+        title: 'Create event',
+        salutation: 'Let\'s create a new event!',
+
+    };
+    response.render('form', contextData);
    
 }
 
@@ -38,5 +48,6 @@ function new_event(request, response) {
 module.exports = {
     index,
     about,
-    new_event
+    new_event,
+    form
 };

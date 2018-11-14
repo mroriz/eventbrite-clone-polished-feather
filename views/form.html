@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h2>Please enter the details of the event you'd like to create</h2>
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/dbase" method="post">
+        <input autocomplete="off" autofocus name="title_event" placeholder="Title of Event" type="text">
+         Date:
+        <input type="date" id="date" name="date_event">
+         Location:
+         <input autocomplete="off" autofocus name="location" placeholder="Location" type="text">
+         Image:
+       <input type="file" name="pic" accept="image/*">
+
+
+        <p>
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+        </p>
+    </form>
+
+
+{% endblock %}
+
+
